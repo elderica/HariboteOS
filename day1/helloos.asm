@@ -28,7 +28,7 @@
 /* Data */
     .byte 0x0a, 0x0a
     .ascii "hello, world"
-    .byte 0x0a, 0x00
+    .byte 0x0a, 0x0d, 0x00
     .org 0x1fe, 0 /* no need to subtract */
     
     .byte 0x55, 0xaa
