@@ -1,4 +1,7 @@
 *.img
 *.o
 *.lst
+edimg0j/edimg
+edimg0j/autodec.obj2
+edimg0j/edimg.obj
 
