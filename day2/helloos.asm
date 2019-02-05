@@ -7,6 +7,8 @@
     https://stackoverflow.com/questions/14290879/disassembling-a-flat-binary-file-using-objdump
 */
 
+/* ORG 0x7c00 */ /* see linker.ld */
+
 .section .text
 /* FAT12  header */
     jmp entry
