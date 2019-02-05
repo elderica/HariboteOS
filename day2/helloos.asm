@@ -41,7 +41,9 @@ entry:
     mov sp, 0x7c00
     mov ds, ax
     mov es, ax
-    mov si, 0x7c74 /* MOV SI, msg */
+.att_syntax
+    movw $msg, %si /* MOV SI, msg */
+.intel_syntax noprefix
 putloop:
     mov al, [si]
     add si, 1
