@@ -3,6 +3,7 @@
 
 /*  FYI:
     https://teratail.com/questions/125503
+    https://kernelhack.hatenablog.com/entry/20090106/1231182085
     https://stackoverflow.com/questions/14290879/disassembling-a-flat-binary-file-using-objdump
 */
 
