@@ -41,9 +41,7 @@ entry:
     mov sp, 0x7c00
     mov ds, ax
     mov es, ax
-.att_syntax
-    movw $msg, %si /* MOV SI, msg */
-.intel_syntax noprefix
+    lea si, byte ptr [msg] /* MOV SI, msg */
 putloop:
     mov al, [si]
     add si, 1
@@ -67,7 +65,6 @@ msg:
     .org 0x1fe, 0 /* RESB 0x7dfe-$ */
 
     .byte 0x55, 0xaa
-
  /* Leftovers */
     .byte 0xf0, 0xff, 0xff, 0x00, 0x00, 0x00, 0x00, 0x00
     .space 4600, 0

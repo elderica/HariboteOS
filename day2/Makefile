@@ -17,7 +17,7 @@ clean:
 	rm $(IMG) $(OBJ) $(LST)
 
 cmp: $(IMG)
-	cmp -l $(IMG) $(KAWAI_IMG)  | perl -ane 'printf("%08X %02X %02X\n", @F)'
+	cmp -l $(IMG) $(KAWAI_IMG)  | perl -ane 'printf("%08X %04X %04X\n", @F)'
 
 disasm:
 	objdump -D -Mintel,i8086 -b binary -m i386 $(IMG)
